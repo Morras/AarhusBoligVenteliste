@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aarhus Bolig Venteliste</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h3>Number applications: <span id="applications"></span></h3>
+    <h3>Median: <span id="median"></span></h3>
+
+    <div id="chart"></div>
+</body>
+<script>
+          google.charts.load('current', {'packages':['corechart']});
+
+//    google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(getData);
+</script>
+
+</html>

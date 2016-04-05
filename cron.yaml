@@ -1,0 +1,5 @@
+cron:
+- description: "Fetch and parse waiting list data"
+  url: /fetchStatus
+  timezone: Europe/Copenhagen
+  schedule: every day 06:00
